@@ -1,4 +1,4 @@
-package com.udemyfastlane;
+package com.dennisroters.udemy.fastlane;
 
 import android.app.Application;
 
