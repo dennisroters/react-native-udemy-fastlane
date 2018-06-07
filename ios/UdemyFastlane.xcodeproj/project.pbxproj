@@ -607,7 +607,13 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = H95HRX963F;
+						ProvisioningStyle = Manual;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = H95HRX963F;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1023,6 +1029,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H95HRX963F;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1035,6 +1044,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdemyFastlane.app/UdemyFastlane";
 			};
 			name = Debug;
@@ -1043,7 +1053,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = H95HRX963F;
 				INFOPLIST_FILE = UdemyFastlaneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1052,6 +1065,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdemyFastlane.app/UdemyFastlane";
 			};
 			name = Release;
@@ -1060,8 +1074,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = H95HRX963F;
 				INFOPLIST_FILE = UdemyFastlane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1071,6 +1088,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dennisroters.udemy.fastlane;
 				PRODUCT_NAME = UdemyFastlane;
+				PROVISIONING_PROFILE = "873ecfee-db72-4210-8281-7fd235827784";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.dennisroters.udemy.fastlane";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1079,7 +1098,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = H95HRX963F;
 				INFOPLIST_FILE = UdemyFastlane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1089,6 +1111,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dennisroters.udemy.fastlane;
 				PRODUCT_NAME = UdemyFastlane;
+				PROVISIONING_PROFILE = "7c18f8a5-5767-478f-8ba3-6a6049fdc995";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.dennisroters.udemy.fastlane";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
